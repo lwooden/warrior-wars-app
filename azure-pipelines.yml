@@ -31,7 +31,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'WarriorWars.exe' 
-    #workingDirectory: 'd:\a\1\s\bin\Release\'
+    workingDirectory: 'd:\a\1\s\bin\Release\'
     #failOnStderr: false # Optional
 
 - task: VSTest@2
