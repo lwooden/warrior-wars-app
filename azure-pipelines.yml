@@ -41,6 +41,6 @@ steps:
     
 - task: PublishBuildArtifacts@1
   inputs:
-    #pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+    pathtoPublish: 'd:\a\1\s\bin\Release\' 
     publishLocation: 'Container'
-    artifactName: 'warrior-wars'
+    artifactName: 'WarriorWars'
