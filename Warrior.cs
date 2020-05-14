@@ -41,7 +41,7 @@ namespace WarriorWars
             }
             else
             {
-                System.Console.WriteLine($"{name} attached {enemy.name}. {damage} damage was inflicted to {enemy.name}!!!");
+                System.Console.WriteLine($"{name} attacked {enemy.name}. {damage} damage was inflicted to {enemy.name}!!!");
             }
         }
 
