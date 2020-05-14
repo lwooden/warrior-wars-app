@@ -30,8 +30,8 @@ steps:
     
 - task: CmdLine@2
   inputs:
-    script: 'warriors-wars.exe' 
-    workingDirectory: '$(build.artifactStagingDirectory)'
+    script: 'WarriorWars.exe' 
+    #workingDirectory: 'd:\a\1\s\bin\Release\'
     #failOnStderr: false # Optional
 
 - task: VSTest@2
