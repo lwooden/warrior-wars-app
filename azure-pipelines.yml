@@ -27,6 +27,12 @@ steps:
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    
+- task: CmdLine@2
+  inputs:
+    script: 'warriors-wars.exe' 
+    #workingDirectory: # Optional
+    #failOnStderr: false # Optional
 
 - task: VSTest@2
   inputs:
