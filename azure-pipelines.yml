@@ -31,7 +31,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'warriors-wars.exe' 
-    #workingDirectory: # Optional
+    workingDirectory: '$(build.artifactStagingDirectory)'
     #failOnStderr: false # Optional
 
 - task: VSTest@2
